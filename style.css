@@ -1,0 +1,357 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+a {
+    color: #e91e63;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #222;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 24px 0;
+}
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+.logo span {
+    color: #e91e63;
+}
+.navbar ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.navbar li {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.navbar li:hover {
+    color: #e91e63;
+}
+.cart {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.cart i {
+    margin-right: 8px;
+}
+
+/* Hero Section */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0 32px 0;
+}
+.left_text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.left_text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.left_text h2 span {
+    color: #7bc043;
+}
+.left_text p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+.left_text span a {
+    background: #e91e63;
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 24px;
+    font-weight: 500;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+.left_text span a:hover {
+    background: #222;
+}
+.right-image img {
+    width: 340px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+}
+.photo-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Clothes Grid */
+.clothes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+}
+.image-div {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+.image-div:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.image-div img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.image-div h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.image-div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.image-div h4 {
+    color: #7bc043;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.fa-ratings {
+    color: #ffb400;
+    font-size: 1rem;
+}
+
+/* Deals Section */
+.deals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 40px 0;
+}
+.right_text h4 {
+    font-size: 1.2rem;
+    color: #e91e63;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.right_text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.right_text h2 span {
+    color: #7bc043;
+}
+.right_text p {
+    margin-bottom: 18px;
+}
+.right_text span a {
+    background: #e91e63;
+    color: #fff;
+    padding: 10px 28px;
+    border-radius: 24px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.right_text span a:hover {
+    background: #222;
+}
+.left-image img {
+    width: 260px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Flex Info Section */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+    gap: 24px;
+}
+.div-grid {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px 0;
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Trending section */
+.trending {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+}
+.trending .image-div {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+.trending .image-div:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.trending .image-div img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+.trending .image-div h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.trending .image-div h4 {
+    color: #7bc043;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* News section */
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 40px 0;
+}
+.img-div {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.date-image {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.date-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.date-image h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    background: #e91e63;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    font-weight: 700;
+}
+.img-div h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.img-div p {
+    color: #666;
+    font-size: 0.98rem;
+}
+.img-div a {
+    color: #e91e63;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.arrow i {
+    color: #e91e63;
+    margin-left: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .clothes-grid, .photo-grid, .trending {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .deals {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .news {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0 8px;
+    }
+    .navigation {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .clothes-grid, .photo-grid, .trending {
+        grid-template-columns: 1fr;
+    }
+    .deals {
+        padding: 16px;
+    }
+    .flex {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
